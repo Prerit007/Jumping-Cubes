@@ -37,37 +37,29 @@ body {
   position: absolute;
   top: -1em;
   left: -1em;
-}
-.front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--boxColor);
-  transform: translateZ(1em);
-}
 
-.right {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--boxColor);
-  transform: rotateY(90deg) translateZ(1em);
-}
+  .right,
+  .left,
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--boxColor);
+  }
 
-.back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--boxColor);
-  transform: rotateY(180deg) translateZ(1em);
-}
-
-.left {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--boxColor);
-  transform: rotateY(270deg) translateZ(1em);
+  .front {
+    transform: translateZ(1em);
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(1em);
+  }
+  .back {
+    transform: rotateY(180deg) translateZ(1em);
+  }
+  .left {
+    transform: rotateY(270deg) translateZ(1em);
+  }
 }
 
 .floor {
